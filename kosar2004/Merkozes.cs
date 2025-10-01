@@ -21,10 +21,10 @@ namespace kosar2004
             this.idopont = idopont;
         }
 
-        public string Helyszin { get => helyszin; set => helyszin = value; }
-        public DateTime Idopont { get => idopont; set => idopont = value; }
-        internal Csapat Hazai { get => hazai; set => hazai = value; }
-        internal Csapat Vendeg { get => vendeg; set => vendeg = value; }
+        public string Helyszin { get => helyszin; }
+        public DateTime Idopont { get => idopont; }
+        internal Csapat Hazai { get => hazai; }
+        internal Csapat Vendeg { get => vendeg; }
 
         public override string? ToString()
         {

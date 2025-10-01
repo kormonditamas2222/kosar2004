@@ -16,9 +16,18 @@ namespace kosar2004
     /// </summary>
     public partial class MainWindow : Window
     {
+        Feladatok f;
+        List<Merkozes> lista;
         public MainWindow()
         {
             InitializeComponent();
+            f = new Feladatok();
+            lista = f.Lista;
+        }
+
+        private void btn_beolvasas_Click(object sender, RoutedEventArgs e)
+        {
+            lb_adatok.ItemsSource = lista;
         }
     }
 }

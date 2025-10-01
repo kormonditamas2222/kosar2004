@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kosar2004"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="kosar2004" Height="450" Width="800">
     <Grid>
+        <ListBox x:Name="lb_adatok" Margin="0,0,0,174"/>
+        <Button x:Name="btn_beolvas" Content="Beolvas" HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" Click="btn_beolvasas_Click"/>
 
     </Grid>
 </Window>
