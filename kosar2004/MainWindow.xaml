@@ -7,8 +7,15 @@
         mc:Ignorable="d"
         Title="kosar2004" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lb_adatok" Margin="0,0,0,174"/>
-        <Button x:Name="btn_beolvas" Content="Beolvas" HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" Click="btn_beolvasas_Click"/>
+        <ListBox x:Name="lb_adatok" Margin="0,0,0,217"/>
+        <Button x:Name="btn_beolvas" Content="Beolvas" HorizontalAlignment="Center" Margin="0,222,0,0" VerticalAlignment="Top" Click="btn_beolvasas_Click"/>
+        <StackPanel Margin="0,247,0,0">
+            <Label x:Name="lbl_3" Content=""/>
+            <Label x:Name="lbl_4"  Content=""/>
+            <Label x:Name="lbl_5" Content=""/>
+            <Label x:Name="lbl_6" Content=""/>
+            <Label x:Name="lbl_7" Content=""/>
+        </StackPanel>
 
     </Grid>
 </Window>

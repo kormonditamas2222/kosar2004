@@ -23,6 +23,13 @@ namespace kosar2004
             InitializeComponent();
             f = new Feladatok();
             lista = f.Lista;
+            lbl_3.Content = f.Harom1;
+            lbl_4.Content = f.Negy1;
+            lbl_5.Content = f.Ot1;
+            foreach (var item in f.Hat1)
+            {
+                lbl_6.Content += item + "\n";
+            }
         }
 
         private void btn_beolvasas_Click(object sender, RoutedEventArgs e)
