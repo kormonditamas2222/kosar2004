@@ -86,7 +86,7 @@ namespace kosar2004
         {
             bool jatszottE = false;
             string csapatNeve = "";
-            string output = "5. feladat: barcelonai capat neve: ";
+            string output = "5. feladat: barcelonai csapat neve: ";
             foreach (Merkozes item in lista)
             {
                 if (item.Hazai.Name.ToLower().Contains("barcelona"))
@@ -107,15 +107,19 @@ namespace kosar2004
         private List<string> Hat()
         {
             List <string> outputs = new List<string>();
+            DateTime day = new DateTime(2004, 11, 21);
             foreach (Merkozes item in lista)
             {
-                if (item.Idopont.Equals(21/11/2004)) // hogyan datetime
+                if (item.Idopont.Equals(day))
                 {
                     outputs.Add($"{item.Hazai.Name}-{item.Vendeg.Name} ({item.Hazai.Pontszam}-{item.Vendeg.Pontszam})");
                 }
             }
             return outputs;
         }
-        
+        //private List<string> Het()
+        //{
+
+        //}
     }
 }

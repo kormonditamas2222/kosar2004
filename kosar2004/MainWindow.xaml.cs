@@ -26,6 +26,7 @@ namespace kosar2004
             lbl_3.Content = f.Harom1;
             lbl_4.Content = f.Negy1;
             lbl_5.Content = f.Ot1;
+            lbl_6.Content = "6. feladat: \n";
             foreach (var item in f.Hat1)
             {
                 lbl_6.Content += item + "\n";
